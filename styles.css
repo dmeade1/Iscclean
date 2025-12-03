@@ -236,10 +236,10 @@ html {
     background-repeat: no-repeat;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     /* Vertically center the content */
     overflow: hidden;
-    padding-top: 80px;
+    padding-top: 180px;
 }
 
 .hero::after {
@@ -361,7 +361,7 @@ html {
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -370,7 +370,7 @@ html {
     font-weight: 800;
     color: var(--white);
     line-height: 1.15;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -379,7 +379,7 @@ html {
 .hero-subtitle {
     font-size: 1.25rem;
     color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.15rem;
     font-weight: 600;
 }
 
