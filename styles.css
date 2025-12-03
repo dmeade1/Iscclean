@@ -230,7 +230,10 @@ html {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     display: flex;
     align-items: center;
@@ -245,8 +248,8 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.5;
+    background: linear-gradient(135deg, rgba(46, 125, 50, 0.85) 0%, rgba(27, 94, 32, 0.85) 100%);
+    z-index: 1;
 }
 
 /* Steam animation */
@@ -713,12 +716,123 @@ html {
     margin: 0 auto;
 }
 
+/* Results Showcase Section */
+.results-showcase {
+    padding: 6rem 0;
+    background: var(--light-bg);
+}
+
+.showcase-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.showcase-image {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.showcase-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.showcase-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feature-item {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    background: var(--white);
+    padding: 1.75rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--gray-200);
+}
+
+.feature-item:hover {
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.1);
+    transform: translateY(-2px);
+    border-color: var(--primary-blue);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.feature-text h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gray-800);
+    margin-bottom: 0.5rem;
+}
+
+.feature-text p {
+    color: var(--gray-600);
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
 /* Client References Section */
 .clients-section {
     padding: 5rem 0;
     background: var(--white);
 }
 
+.clients-logos-grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.client-logo-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--gray-200);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+}
+
+.client-logo-item:hover {
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.1);
+    transform: translateY(-4px);
+    border-color: var(--primary-blue);
+}
+
+.client-logo-item img {
+    max-width: 100%;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Legacy clients support */
 .clients-logos {
     margin-top: 3rem;
     display: flex;
@@ -727,6 +841,23 @@ html {
 }
 
 .clients-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Inspection Checklist Section */
+.inspection-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.inspection-content {
+    text-align: center;
+}
+
+.inspection-image {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
@@ -820,6 +951,11 @@ html {
     .process-step::after {
         display: none;
     }
+
+    .showcase-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -888,6 +1024,11 @@ html {
 
     .cta-box {
         padding: 2.5rem 1.5rem;
+    }
+
+    .clients-logos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .phone-cta,
