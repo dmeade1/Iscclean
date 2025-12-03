@@ -112,6 +112,14 @@ html {
     .logo-image {
         height: 40px;
     }
+
+    .header-phone {
+        display: none !important;
+    }
+}
+
+.main-header .logo-image {
+    filter: grayscale(100%) brightness(0.3);
 }
 
 .main-nav {
