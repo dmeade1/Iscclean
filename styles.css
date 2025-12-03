@@ -95,8 +95,24 @@ html {
     font-weight: 600;
 }
 
-.main-header.scrolled .logo-subtitle {
-    color: var(--primary-light);
+.logo-image {
+    height: 50px;
+    width: auto;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-logo-img {
+    height: 60px;
+    filter: brightness(0) invert(1);
+    /* Make footer logo white if it's blue */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-image {
+        height: 40px;
+    }
 }
 
 .main-nav {
