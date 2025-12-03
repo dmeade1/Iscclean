@@ -1,0 +1,481 @@
+/* About Page Specific Styles */
+
+/* Page Hero */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
+    padding: 10rem 2rem 6rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.page-hero p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Our Story Section */
+.story-section {
+    padding: 5rem 0;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-content h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--gray-800);
+    margin-bottom: 1.5rem;
+}
+
+.story-content p {
+    color: var(--gray-600);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.story-highlight {
+    background: var(--light-bg);
+    border-left: 4px solid var(--primary-blue);
+    padding: 1.5rem;
+    border-radius: 0 12px 12px 0;
+    margin: 2rem 0;
+}
+
+.story-highlight p {
+    color: var(--gray-800);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+    font-style: italic;
+}
+
+.story-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--gray-200);
+}
+
+.stat-box .number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    line-height: 1;
+}
+
+.stat-box .label {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.story-visual {
+    position: relative;
+}
+
+.story-image-box {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
+    border-radius: 24px;
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-image-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+}
+
+.story-badge {
+    position: relative;
+    z-index: 2;
+}
+
+.story-badge .year {
+    font-size: 5rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1;
+    opacity: 0.9;
+}
+
+.story-badge .text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.ownership-badge {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ownership-badge .title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.ownership-badge .name {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+}
+
+/* Employees Section */
+.employees-section {
+    background: var(--light-bg);
+    padding: 5rem 0;
+}
+
+.employees-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.employee-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid var(--gray-200);
+    transition: all 0.3s ease;
+}
+
+.employee-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0, 51, 160, 0.1);
+    border-color: var(--primary-blue);
+}
+
+.employee-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+}
+
+.employee-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+}
+
+.employee-card p {
+    color: var(--gray-600);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Training Highlights */
+.training-section {
+    padding: 5rem 0;
+}
+
+.training-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.training-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.training-intro p {
+    color: var(--gray-600);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.training-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.training-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--gray-100);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.training-item:hover {
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0, 51, 160, 0.08);
+}
+
+.training-check {
+    width: 32px;
+    height: 32px;
+    background: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.training-check svg {
+    width: 16px;
+    height: 16px;
+    stroke: white;
+    stroke-width: 3;
+}
+
+.training-item-content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gray-800);
+    margin-bottom: 0.25rem;
+}
+
+.training-item-content p {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+}
+
+/* Insurance Section */
+.insurance-section {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.insurance-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.insurance-content {
+    position: relative;
+    z-index: 2;
+}
+
+.insurance-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.insurance-header .section-tag {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.insurance-header h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.insurance-header p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.insurance-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.insurance-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.insurance-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+}
+
+.insurance-icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    font-size: 1.5rem;
+}
+
+.insurance-card h3 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.insurance-card p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+}
+
+.insurance-card.highlight {
+    background: white;
+    border-color: white;
+}
+
+.insurance-card.highlight h3 {
+    color: var(--primary-blue);
+}
+
+.insurance-card.highlight p {
+    color: var(--gray-600);
+}
+
+.insurance-card.highlight .insurance-icon {
+    background: var(--primary-blue);
+    color: white;
+}
+
+/* Memberships Section */
+.memberships-section {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.memberships-placeholder {
+    background: var(--light-bg);
+    border: 2px dashed var(--gray-200);
+    border-radius: 16px;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.memberships-placeholder p {
+    color: var(--gray-600);
+    font-size: 1.1rem;
+}
+
+/* Active nav link on about page */
+.main-nav a.active {
+    color: var(--orange);
+}
+
+.main-nav a.active::after {
+    width: 100%;
+}
+
+.main-header.scrolled .main-nav a.active {
+    color: var(--orange);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .story-visual {
+        order: -1;
+    }
+
+    .employees-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .insurance-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 8rem 2rem 4rem;
+    }
+
+    .story-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .training-list {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-box {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .cta-phone {
+        font-size: 1.25rem;
+        padding: 1rem 1.75rem;
+    }
+}
