@@ -193,7 +193,7 @@
 
 .employee-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 15px 40px rgba(0, 51, 160, 0.1);
+    box-shadow: 0 15px 40px rgba(46, 125, 50, 0.1);
     border-color: var(--primary-blue);
 }
 
@@ -261,7 +261,7 @@
 
 .training-item:hover {
     background: var(--white);
-    box-shadow: 0 10px 30px rgba(0, 51, 160, 0.08);
+    box-shadow: 0 10px 30px rgba(46, 125, 50, 0.08);
 }
 
 .training-check {

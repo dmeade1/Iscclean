@@ -183,7 +183,7 @@
 
 .equipment-card:hover {
     border-color: var(--primary-blue);
-    box-shadow: 0 10px 30px rgba(0, 51, 160, 0.1);
+    box-shadow: 0 10px 30px rgba(46, 125, 50, 0.1);
 }
 
 .equipment-card h4 {
