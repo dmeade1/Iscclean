@@ -1227,6 +1227,14 @@ html {
         transition: right 0.3s ease;
     }
 
+    .hero {
+        padding-top: 160px;
+        /* Increased to ensure header clearance */
+        align-items: flex-start;
+        min-height: auto;
+        padding-bottom: 4rem;
+    }
+
     .main-nav.active {
         right: 0;
     }

@@ -1,0 +1,7 @@
+{
+    "event": {
+        "token": "TOKEN",
+        "expectedAction": "QUOTE_REQUEST",
+        "siteKey": "6Lebkh8sAAAAAGlMCVyHtwhNzP_GI6IBIqdJ_uQn"
+    }
+}
