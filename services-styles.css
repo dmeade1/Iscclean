@@ -477,8 +477,8 @@
 
 @media (max-width: 768px) {
     .page-hero {
-        padding: 11rem 2rem 4rem;
-        /* Increased from 8rem to prevent header overlap */
+        padding: 14rem 2rem 4rem;
+        /* Further increased to 14rem to guarantee no overlap */
     }
 
     .service-nav {
