@@ -3,7 +3,8 @@
 /* Page Hero */
 .page-hero {
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
-    padding: 10rem 2rem 6rem;
+    padding: 12rem 2rem 6rem;
+    /* Increased from 10rem to prevent header overlap */
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -476,7 +477,8 @@
 
 @media (max-width: 768px) {
     .page-hero {
-        padding: 8rem 2rem 4rem;
+        padding: 11rem 2rem 4rem;
+        /* Increased from 8rem to prevent header overlap */
     }
 
     .service-nav {
