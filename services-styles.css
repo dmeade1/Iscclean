@@ -3,8 +3,7 @@
 /* Page Hero */
 .page-hero {
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
-    padding: 12rem 2rem 6rem;
-    /* Increased from 10rem to prevent header overlap */
+    padding: 10rem 2rem 6rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -44,7 +43,8 @@
     background: var(--white);
     border-bottom: 1px solid var(--gray-200);
     position: sticky;
-    top: 80px;
+    top: 100px;
+    /* Increased from 80px to clear fixed header (102px height) */
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
@@ -477,12 +477,12 @@
 
 @media (max-width: 768px) {
     .page-hero {
-        padding: 14rem 2rem 4rem;
-        /* Further increased to 14rem to guarantee no overlap */
+        padding: 8rem 2rem 4rem;
     }
 
     .service-nav {
-        top: 70px;
+        top: 105px;
+        /* Adjusted for mobile header height */
     }
 
     .service-nav-inner {
